@@ -65,7 +65,7 @@ const Footer = () => {
             {data.map((d) => (
 
                  
-<div className="flex flex-col mt-3 gap-[16px]">
+<div className="flex flex-col mt-3 gap-[16px]" key={d.title}>
  <div className="text-[16px] tracking-[3px] font-medium leading-[18px]">{d.title}</div>
  {d.links.map((l) => (
     <ul className="flex flex-col gap-[10px] ">
