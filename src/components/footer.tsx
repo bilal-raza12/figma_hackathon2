@@ -29,13 +29,13 @@ const data = [
 const Footer = () => {
   return (
     <div className="">
-        <div className="bg-black flex gap-[16px] z-20 flex-col  absolute w-[95%] ml-3 h-[293px] rounded-[20px]">
-            <div className="text-white font-bold text-[32px] w-[297px] h-[105px] leading-[35px] ml-5 my-5">
+        <div className="bg-black flex gap-[16px] z-20 sm:flex-row sm:justify-between flex-col  absolute w-[95%] ml-3 h-[293px] rounded-[20px] sm:py-[40px] sm:px-4 px-0 py-0">
+            <div className="text-white  font-bold text-[32px] sm:40 w-[297px] h-[105px] leading-[35px] ml-5 my-5">
             STAY UPTO DATE ABOUT OUR LATEST OFFERS
                
             </div>
 
-            <div className="flex flex-col  gap-[4px]">
+            <div className="flex flex-col mt-7 gap-[4px]">
                     <div className="flex gap-[4px] rounded-[62px] w-[250px] h-[38px] radius-[62px] px-[16px] py-[12px] bg-white ml-5 ">
                        <div className="w-[20px] h-[20px] text-black"><TfiEmail className="w-[17px] h-[14px] "/></div>
                        <input type="text" placeholder="Enter your email address " className="text-black opacity-[40%] text-[12px] font-medium leading-[18.9px]"/>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         </div>
         <div className="bg-[#f0f0f0] h-[846px] mt-[40px] border pl-2  ">
-            <div className="flex flex-col gap-5">
+            <div className="flex sm:flex-row flex-col gap-5">
 
             <div className="  font-bold leading-[34px]  text-[28px] pt-[313px]  mt-[40px]">
                    SHOP.CO
@@ -76,15 +76,15 @@ const Footer = () => {
 ))}
 
             </div>
-            <div className="border-t-2 border-black border-opacity-[10%]">
-                   <div className="mt-2 text-center text-[14px] text-black text-[60%] leading-[18.96px]">
+            <div className="border-t-2 sm:flex sm:flex-row w-full sm:justify-between md:sticky md:bottom-0 border-black md:items-center md: border-opacity-[10%]">
+                   <div className="mt-2 text-center text-[14px] sm:text-[16px] text-black opacity-[60%] leading-[18.96px]">
                    © 2000-2021, All rights reserved
                    </div>
-                   <div className="flex gap-[4px] mt-10 mx-auto">
+                   <div className="flex gap-[4px] mt-10 mx-auto sm:justify-end">
                     <div className="bg-white w-[24px] h-[24px] mx-auto"><img src="/images/Visa.png" alt="" /></div>
                     <div className="bg-white w-[24px] h-[24px] mx-auto"><img src="/images/MasterCard.png" alt="" /></div>
                     <div className="bg-white w-[24px] h-[24px] mx-auto"><img src="/images/Paypal.png" alt="" /></div>
-                    <div className="bg-white w-[24px] h-[24px] mx-auto"><img src="/images/Pay.png" alt="" /></div>
+                    <div className="bg-white w-[28px] h-[18px] mx-auto"><img src="/images/Pay.png" alt="" /></div>
                     <div className="bg-white w-[24px] h-[24px] mx-auto"><img src="/images/G Pay.png" alt="" /></div>
 
                    </div>
