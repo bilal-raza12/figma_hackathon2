@@ -3,7 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
+import Link from "next/link";
 const Header = () => {
   return (
     <nav className="flex flex-col ">
@@ -55,9 +55,9 @@ const Header = () => {
             <div className="w-6 h-6 text-black md:hidden">
               <IoIosSearch className="w-[18px] h-[16px]" />
             </div>
-            <div className="w-6 h-6 text-black">
+           <Link href={"/cart"}> <div className="w-6 h-6 text-black">
               <PiShoppingCartSimpleLight className="md:w-[24px] md:h-[24px] w-[18px] h-[18px]"  />
-            </div>
+            </div></Link>
             <div className="w-6 h-6 text-black">
               <CgProfile className="md:w-[24px] md:h-[24px] h-[16px] w-[16px] " />
             </div>
