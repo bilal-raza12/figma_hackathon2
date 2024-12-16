@@ -10,16 +10,16 @@ const geistSans = localFont({
   weight: "100 900",
 });
 
-// const integralCFbold = localFont({
-//   src: '../../public/font/Fontspring-DEMO-integralcf-bold.otf',
-//   variable: "--font-integralCfbold",
-//   weight: "700",
-// });
-// const satoshibold = localFont({
-//   src: "../../public/font/Satoshi-Bold.woff2",
-//   variable: "--font-satoshibold",
-//   weight: "700",
-// })
+const integralCFbold = localFont({
+  src: '../../public/font/Fontspring-DEMO-integralcf-bold.otf',
+  variable: "--font-integralCfbold",
+  weight: "700",
+});
+const satoshibold = localFont({
+  src: "../../public/font/Satoshi-Bold.woff2",
+  variable: "--font-satoshibold",
+  weight: "700",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable}  antialiased`}
+        className={`${geistSans.variable} ${integralCFbold.variable} ${satoshibold.variable} antialiased`}
       >
         <TopHeader/>
         <Header />
