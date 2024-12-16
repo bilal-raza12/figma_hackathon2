@@ -13,7 +13,14 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily:{
-        satoshi:['Satoshi-Bold','sans-serif']
+        satoshibold:["satoshiBold" , "integralCf"],
+        integralcfbold:["integralCFbold","sansserif"],
+        integralCfregular:["integralCf-Regular","sans serif"],
+        satoshiregular:["satoshi-regular","sans serif"],
+        satoshimedium:["satoshi-medium","sans serif"],
+
+
+       
       }
     },
   },

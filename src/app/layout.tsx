@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/header";
+import TopHeader from "@/components/topHeader";
 import Footer from "@/components/footer";
-
+import Header from "@/components/header";
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const satoshi = localFont({
-  src: "./fonts/Satoshi-Bold.woff",
-  variable: "--font-satoshi",
+
+const integralCFbold = localFont({
+  src: '../../public/font/Fontspring-DEMO-integralcf-bold.otf',
+  variable: "--font-integralCfbold",
+  weight: "700",
+});
+const satoshibold = localFont({
+  src: "../../public/font/Satoshi-Bold.woff2",
+  variable: "--font-satoshibold",
   weight: "700",
 })
 
@@ -28,9 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${satoshi.variable}  antialiased`}
+        className={`${geistSans.variable} ${satoshibold.variable}  antialiased`}
       >
-        <Header/>
+        <TopHeader/>
+        <Header />
         {children}
         <Footer/>
       </body>
