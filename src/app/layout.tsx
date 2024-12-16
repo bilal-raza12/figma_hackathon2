@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${satoshibold.variable}  antialiased`}
+        className={`${geistSans.variable}  antialiased`}
       >
         <TopHeader/>
         <Header />
