@@ -113,6 +113,7 @@ const NewArrivals = () => {
 
       
         </div>
+        <button className="py-4 px-[54px] md:w-[218px] w-[320px] md:mt-[290px] mt-[650px] md:ml-[611px] ml-4 font-satoshimedium  rounded-[62px] border-[1px]   bg-black bg-opacity-[10%] text=black">View All</button>
     </div>
   )
 }
