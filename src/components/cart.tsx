@@ -1,5 +1,4 @@
-"use client";
-import { useState } from "react";
+
 import Image from "next/image";
 import { RiDeleteBinFill } from "react-icons/ri";
 import { FiMinus } from "react-icons/fi";
@@ -47,7 +46,7 @@ const ProductData : IProduct[] = [
 ]
 
 const YourCart = () => {
-    const [items , setItems] = useState<number>(1);
+   
   return (
     <div className='mt-7'>
         <h1 className='font-integralcfbold text-[40px] leading-[48px]'>YOUR CART</h1>
@@ -79,7 +78,7 @@ const YourCart = () => {
                                 <div className="w-6 h-6"><RiDeleteBinFill className="w-[18px] text-[#ff3333] h-[19px] mt-[2px] ml-[3px]"/></div>
                                 <div className="flex items-center gap-5 rounded-[62px] bg-[#f0f0f0] py-3 px-5 radius-[63px] w-[126px] h-[44px]">
                                     <div className="w-5 h-5 text-black"><FiMinus className="w-[15px]  mt-[3px] ml-[2px] "/></div>
-                                    <span>{items}</span>
+                                    <span>1</span>
                                     <div  className="w-5 h-5 "><FaPlus className="w-4 h-4 mt-[2px] ml-[2px]"/></div>
                                 </div>
                             
