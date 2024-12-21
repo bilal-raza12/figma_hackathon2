@@ -89,7 +89,7 @@ const Reviews = () => {
     ))}
     </div>
 
-    <div className="border-[1px] border-black border-opacity-[10%] hidden md:inline-flex w-[400px] absolute right-[-320px] mt-[25px] h-[240px] px-8 py-7 rounded-[20px]">
+     <div className="border-[1px] border-black border-opacity-[10%] hidden md:inline-flex w-[400px] absolute right-[-320px] mt-[25px] h-[240px] px-8 py-7 rounded-[20px]">
             <div className="flex  flex-col max-w-[236px] justify-between blur-[2px]">
                 <div className="flex gap-6 ">
                     <Image className="" src={"/images/ratingstar.png"} alt="" width={24} height={24}></Image>
@@ -99,15 +99,15 @@ const Reviews = () => {
                     <Image className="" src={"/images/ratingstar.png"} alt="" width={24} height={24}></Image>
 
                 </div>
-                <div className="flex flex-col gap-[12px] mt-3">
+                 <div className="flex flex-col gap-[12px] mt-3">
                     <div className="flex gap-2">
                         <h1 className="font-satoshibold text-[20px] leading-[22px]">Moo</h1>
                         <div><Image src={"/images/checkbox.png"} alt="" width={20} height={20}></Image></div>
                     </div>
                     <p className="font-satoshiregular w-full text-[16px] leading-[22px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, optio fugit. Modi velit repellendus accusamus temporibus aliquam sit corrupti consequuntur cupiditate?</p>
-                </div>
+                </div> 
             </div>
-        </div>
+        </div> 
 
   </div>
    </div>
