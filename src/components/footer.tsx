@@ -55,8 +55,8 @@ const Footer = () => {
               {f.links.map((l) => (
 
               
-              <ul className="flex flex-col gap-6">
-              <li key={l} className="text-[16px] leading-[19px] text-black opacity-[60%] font-satoshiregular">{l}</li>
+              <ul key={l} className="flex flex-col gap-6">
+              <li  className="text-[16px] leading-[19px] text-black opacity-[60%] font-satoshiregular">{l}</li>
               </ul>
               ))}
             </div>
