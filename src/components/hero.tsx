@@ -31,7 +31,7 @@ const Hero = () => {
       
   </div>
 
-  <div className="flex flex-col ml-6 sm:hidden absolute top-[460px] left-[100px]">
+  <div className="flex flex-col ml-6 sm:hidden absolute top-[460px] left-[100px] z-20">
         <h1 className="font-satoshibold text-2xl ">30,000 +</h1>
         <h3 className="font-satoshiregular text-[12px] leading-[22px] opacity-[60%]">Happy Customers</h3>
 

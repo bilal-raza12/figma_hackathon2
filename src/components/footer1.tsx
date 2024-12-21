@@ -10,7 +10,7 @@ import { TfiEmail } from "react-icons/tfi";
 
 const Footer1 = () => {
   return (
-   <div className="bg-black static md:w-[1240px] w-[340px] md:mx-[100px] mx-[16px] flex md:flex-row flex-col justify-between rounded-[20px] md:px-[64px] px-6 py-[32px] mt-[55px]">
+   <div className="bg-black static md:w-[1240px] w-[340px] md:mx-[100px] mx-[16px] flex md:flex-row flex-col justify-between rounded-[20px] md:px-[64px] px-6 py-[32px] ">
        <div className="md:max-w-[550px] max-w-[310px] font-integralcfbold md:text-[40px] text-[30px] leading-[36px] md:leading-[48px] text-white">STAY UPTO DATE ABOUT OUR LATEST OFFERS</div>
        <div className="flex flex-col md:gap-[14px] gap-[10px]">
         <div className="flex md:w-[350px] mt-[15px] w-[300px] py-3 px-4 gap-3 bg-white rounded-[62px]">

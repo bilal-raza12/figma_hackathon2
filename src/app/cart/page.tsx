@@ -1,11 +1,11 @@
 
-import React from 'react'
+
 
 import { SlArrowRight } from "react-icons/sl";
 import YourCart from '@/components/cart';
 const Cart = () => {
   return (
-    <div className='min-h-screen pl-[100px]'>
+    <div className=' pl-[100px]'>
       {/* cart url */}
       <div className='flex gap-3 mt-6 items-center'>
         <div className="flex gap-1 items-center text-black opacity-[60%]">
@@ -18,7 +18,9 @@ const Cart = () => {
 
       <YourCart />
       </div>
+      
     </div>
+    
   )
 }
 
