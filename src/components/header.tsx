@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 import { FaBars } from "react-icons/fa"; 
+import Link from "next/link";
 
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
           <div className="flex md:hidden gap-[12px] mt-[20px] ml-[40px]">
 
              <div className="w-6 h-6 "><IoIosSearch className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div>
-             <div className="w-6 h-6 "><PiShoppingCartSimpleLight className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div>
+             <Link href={"/cart"}><div className="w-6 h-6 "><PiShoppingCartSimpleLight className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div></Link>
              <div className="w-6 h-6 "><CgProfile className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div>
           </div>
              {/* search bar desktop */}
@@ -50,7 +51,7 @@ const Header = () => {
 
                 {/* functional icons */}
              <div className="flex gap-[14px] hidden sm:inline-flex">
-                <div className="w-6 h-6"><PiShoppingCartSimpleLight className="w-[22.13px] h-[20.25] mt-[1.88px]"/></div>
+                <Link href={"/cart"}><div className="w-6 h-6"><PiShoppingCartSimpleLight className="w-[22.13px] h-[20.25] mt-[1.88px]"/></div></Link>
                 <div className="w-6 h-6"><CgProfile className="w-[22.13px] h-[20.25] mt-[1.88px]"/></div>
              </div>
             
