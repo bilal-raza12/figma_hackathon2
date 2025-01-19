@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${integralCFbold.variable} ${satoshibold.variable} antialiased`}
+        className={`${geistSans.variable} ${integralCFbold.variable} ${satoshibold.variable} ${integralCFbold.variable} ${satoshibold.variable} antialiased`}
       >
         <TopHeader/>
         <Header />

@@ -9,7 +9,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="sm:flex sm:flex-col ">
-        <div className="flex sm:items-center  sm:mt-[24px] sm:ml-[100px] sm:w-[1240px] sm:gap-[40px] h-[48px]   sm:justify-evenly  ">
+        <div className="flex sm:items-center  sm:mt-[24px] lg:ml-5 xl:ml-[50px] lg:w-auto xl:w-[1240px]  sm:gap-[40px] h-[48px]   sm:justify-evenly  ">
 
             
 

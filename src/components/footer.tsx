@@ -25,12 +25,12 @@ const footerData = [
 const Footer = () => {
   return (
     <div className=" relative h-auto">
-  <div  className="absolute md:w-[1240px] md:top-[180px] top-[90px]">
+  <div  className="absolute md:w-[1040px] md:top-[-90px] top-[90px]">
     <Footer1  />
     </div>
     
-    <div className='w-full bg-black bg-opacity-[10%] mt-[340px] h-full  pt-[100px] md:pl-[100px] pl-4 pb-20 '>
-       <div className="flex md:flex-row flex-col md:gap-[150px] gap-4 w-full h-auto md:mt-7 mt-0">
+    <div className='w-full bg-black bg-opacity-[10%] mt-[340px] h-full  pt-[100px] md:pl-[50px] pl-4 pb-20 '>
+       <div className="flex md:flex-row flex-col md:gap-[100px] gap-4 w-full h-auto md:mt-7 mt-0">
         {/* about */}
         <div className="flex flex-col md:gap-[35px] md:w-[248px] gap-[25px] w-[320px]">
           <div className="flex flex-col md:gap-[25px] gap-2 ">
