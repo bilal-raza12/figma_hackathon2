@@ -73,7 +73,7 @@ async function importProducts() {
 
     const products = await response.json();
 
-    for (const product of products) {
+    for (const product of products) {a
       await uploadProduct(product);
     }
   } catch (error) {

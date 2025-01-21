@@ -1,5 +1,5 @@
 export interface IProducts{
-    _id:number,
+    _id:string,
   name:string,
   description:string,
   price:string,
@@ -8,5 +8,9 @@ export interface IProducts{
   discountPercent:string,
   isNew:boolean,
   colors:string,
-  sizes:string
+  sizes:string,
+  slug:{
+    _type:"slug"
+    current:string,
+  }
 } 

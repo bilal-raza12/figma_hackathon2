@@ -26,6 +26,14 @@ export default defineType({
         type: 'image',
         },
         {
+           name:"slug",
+            title: 'Slug',
+            type:'slug',
+            options: {
+                source:"name"
+              }
+        },
+        {
             name:"category",
             title:"Category",
             type: 'string',
@@ -36,6 +44,12 @@ export default defineType({
                    {title: 'Jeans', value: 'jeans'} ,
                    {title: 'Hoddie', value: 'hoodie'} ,
                    {title: 'Shirt', value: 'shirt'} ,
+                   {title:'Casual', value: 'Casual'},
+                   {title:'Formal', value: 'Formal'} ,
+                   {title:'Gym', value: 'GYM'} ,
+                   {title:'Fashion',value:'Fashion'}
+                 ,
+
                 ]
             }
         },
@@ -44,6 +58,7 @@ export default defineType({
             title:"Discount Percent",
             type: 'number',
         },
+     
         {
             name:"new",
             type: 'boolean',
