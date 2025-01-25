@@ -24,7 +24,7 @@ const footerData = [
 ]
 const Footer = () => {
   return (
-    <div className=" relative h-auto">
+    <div className=" relative z-60 h-auto   ">
   <div  className="absolute md:w-[1040px] md:top-[-90px] top-[90px]">
     <Footer1  />
     </div>

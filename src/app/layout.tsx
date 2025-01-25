@@ -5,6 +5,7 @@ import TopHeader from "@/components/topHeader";
 import Footer from "@/components/footer";
 
 import Header from "@/components/header";
+import { CartProvider } from "./context/cartContext";
 const geistSans = localFont({
   src: "/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -39,8 +40,16 @@ export default function RootLayout({
       >
         <TopHeader/>
         <Header />
+  <CartProvider>
+
+
         {children}
+  </CartProvider>
+       
+        
+
         <Footer />
+        
        
       </body>
     </html>

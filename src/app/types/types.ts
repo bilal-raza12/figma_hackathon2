@@ -1,4 +1,5 @@
 export interface IProducts{
+    id(id: any): void
     _id:string,
   name:string,
   description:string,
@@ -12,5 +13,6 @@ export interface IProducts{
   slug:{
     _type:"slug"
     current:string,
-  }
+  },
+  quantity?:number,
 } 

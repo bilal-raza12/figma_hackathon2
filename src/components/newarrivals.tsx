@@ -4,11 +4,11 @@
 
 import { SanityFetch } from "@/sanity/lib/fetch";
 import { IProducts } from "@/app/types/types";
-import { allproducts } from "@/sanity/lib/query";
+import { allproductsdetail } from "@/sanity/lib/query";
 import Link from "next/link";
 
 const NewArrivals = async () => {
-  const data: IProducts[] = await SanityFetch({ query: allproducts });
+  const data: IProducts[] = await SanityFetch({ query: allproductsdetail });
   return (
     <div>
       <div className="pb-8">
@@ -16,7 +16,7 @@ const NewArrivals = async () => {
           New Arrivals
         </h1>
 
-        <div className="flex justify-between md:gap-[10px] gap-0 md:ml-[w0px] ml-[8px] absolute top-[1050px]">
+        <div className="grid md:grid-cols-4  grid-cols-2 justify-between md:gap-[10px] gap-0 md:ml-[w0px] ml-[8px] absolute top-[1050px]">
           {data.slice(0, 4).map((item) => (
             <Link href={`/newarrivals/${item._id}`}>
             <div
@@ -46,9 +46,11 @@ const NewArrivals = async () => {
       </div>
 
       <div>
+        <Link href={"/newarrivals"}>
         <button className="py-4 px-[54px] md:w-[218px] w-[320px] md:mt-[290px] mt-[650px] md:ml-[551px] ml-4 font-satoshimedium rounded-[62px] border-[1px] bg-black bg-opacity-[10%] text-black">
           View All
         </button>
+        </Link>
       </div>
     </div>
   );
