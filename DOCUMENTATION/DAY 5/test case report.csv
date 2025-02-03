@@ -1,0 +1,7 @@
+Test Case Id,Test Cse Desc,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks,
+TC001,Validate product listing page,open product page > verify products,products displayed correctly,products displayed correctlt,passed,low,      -,no issues found,
+TC002,Api testing,check api > verify data,data played successfully,data displayed successfully,passed,low,   -,no issues found,
+TC003,checking cart functionality,add product to cart > verify cart fubctionality,cart updated with added product,cartt updated correctly,passed,medium,       -,no issues found,
+TC004,check responsiveness for mobile,resize the browser screen to smaller size > check responsiveness,site is responsive,site is responsive,passed,high,       -,no issues foubd,found
+TC005,Checking checkout fubctionality,add cart content to checkout > verify checkout functionality,checkout content is updated,checkout contenr is updated,passed,lmedium,       -,no issues found,
+TC006,ttesting order migration to database,fillout the checkot form > required data post to database,data injested correctly with product reference,data injested correctly,passed,high,       -,no issues found,

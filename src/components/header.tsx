@@ -44,10 +44,7 @@ const Header = () => {
              <div className="w-6 h-6 "><CgProfile className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div>
           </div>
              {/* search bar desktop */}
-                <div className="hidden sm:inline-flex flex gap-[12px] bg-[#f0f0f0] py-[12px] px-[16px] w-[577px] h-[48px] rounded-[62px] text-[black opacity-[40%]]">
-                    <div className="w-6 h-6"><IoIosSearch className="w-[20.27px] h-[20.27px] mt-[1.86px] ml-[1.86px]"/></div>
-                    <input type="text" className="bg-transparent text-[16px] leading-[21.6px] font-satoshiregular outline-none" placeholder="Search for products..."/>
-                </div>
+                
 
                 {/* functional icons */}
              <div className="flex gap-[14px] hidden sm:inline-flex">
@@ -56,8 +53,8 @@ const Header = () => {
              </div>
             
             
-        </div>
-        <div className="border-black border-[1px] border-opacity-[10%] mt-6 w-[1240px] hidden sm:block ml-[100px]"></div>
+             </div>
+        {/* <div className="border-black border-[1px] border-opacity-[10%] mt-6 hidden sm:block ml-[100px]"></div> */}
         </div>
   )
 }

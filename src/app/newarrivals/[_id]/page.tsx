@@ -40,16 +40,16 @@ const NewArrivalDetail =   ({ params }: INewArrival) => {
   }
     // Render the product details
     return (
-        <div className=''>
+        <div className='px-3 md:px-0 full'>
           
-          <div className='flex gap-9  mt-[50px] justify-center items-center'>
-             <img src={product?.imageurl} alt={product?.name || "Product image"} className='w-[350px] h-full'/>
+          <div className='flex md:flex-row flex-col gap-9  mt-[50px] justify-center items-center'>
+             <img src={product?.imageurl} alt={product?.name || "Product image"} className='md:w-[350px]  w-[200px] h-full'/>
             <div className='flex flex-col gap-6'>
 
-            <h1 className='font-integralcfbold text-2xl'>{product?.name}</h1>
-            <h1 className='font-satoshibold text-xl'>${product?.price}</h1>
+            <h1 className='font-integralcfbold md:text-2xl text-sm'>{product?.name}</h1>
+            <h1 className='font-satoshibold md:text-xl text-sm'>${product?.price}</h1>
             <h1>Description:</h1>
-            <p className='w-[500px] text-sm'>{product?.description}</p>
+            <p className='md:w-[500px] w-[200px] md:text-sm text-xs'>{product?.description}</p>
             <Link href={"/cart"}>
             <button onClick={handleAddCart} className='bg-black text-white px-5 py-3 rounded-[62px]'>ADD TO CART</button>
             </Link>

@@ -1,10 +1,11 @@
 "use client"
-import Image from "next/image";
+
 import { RiDeleteBinFill } from "react-icons/ri";
 import { FiMinus } from "react-icons/fi";
 import { FaPlus } from "react-icons/fa6";
 import { FiArrowRight } from "react-icons/fi";
 import { useCart } from "@/app/context/cartContext";
+import Link from "next/link";
 
 
 
@@ -37,11 +38,11 @@ const YourCart = () => {
                             </div>
 
                             <div className="flex flex-col text-end  items-end justify-between w-fit  md:w-[255px] h-[124px] absolute right-0">
-                                <button  className="w-6 h-6"><RiDeleteBinFill className="w-[18px] text-[#ff3333] h-[19px] mt-[2px] ml-[3px]"/></button>
+                                <button  onClick={() => removeFromCart(p._id)} className="w-6 h-6"><RiDeleteBinFill className="w-[18px] text-[#ff3333] h-[19px] mt-[2px] ml-[3px]"/></button>
                                 <div className="flex items-center gap-5 rounded-[62px] bg-[#f0f0f0] md:py-3 md:px-5 px-5 py-[14px] radius-[63px] md:w-[126px] w-[105px] h-[44px] md:mb-0 mb-4">
-                                    <button onClick={() => decreaseQuantity(p.id.toString())} className="md:w-5 md:h-5 w-4 h-4 text-black"><FiMinus className="md:w-[15px]  md:mt-[3px] md:ml-[2px] w-[12px] mt-[7px]"/></button>
+                                    <button onClick={() => decreaseQuantity(p._id)} className="md:w-5 md:h-5 w-4 h-4 text-black"><FiMinus className="md:w-[15px]  md:mt-[3px] md:ml-[2px] w-[12px] mt-[7px]"/></button>
                                     <span>{p.quantity}</span>
-                                    <button  onClick={() => increaseQuantity(p.id.toString())} className="md:w-5 w-4 md:h-5 h-4 "><FaPlus className="md:w-4 md:h-4 mt-[2px] ml-[2px] w-[12px] h-[12px]"/></button>
+                                    <button  onClick={() => increaseQuantity(p._id)} className="md:w-5 w-4 md:h-5 h-4 "><FaPlus className="md:w-4 md:h-4 mt-[2px] ml-[2px] w-[12px] h-[12px]"/></button>
                                 </div>
                             
                             </div>
@@ -77,11 +78,15 @@ const YourCart = () => {
 
 
                {/* checkout button */}
+            <Link href="/checkout">
                <div className="flex text-white gap-3 py-4 px-[54px] bg-black rounded-[62px] justify-center md:w-[457px] w-[300px]">
                    <h1 className="font-satoshimedium ">Go To Checkout</h1>
                    <div className="w-6 h-6 text-white"><FiArrowRight className="w-[16px] h-[19px] mt-[4px]"/></div>
+                   
                </div>
+               </Link>
             </div>
+            
         
         </div>
 

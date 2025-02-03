@@ -4,7 +4,7 @@ import { useCart } from "../context/cartContext";
 import { SlArrowRight } from "react-icons/sl";
 import YourCart from '@/components/cart';
 const Cart = () => {
-  const {cartItems,addToCart , increaseQuantity , removeFromCart , totalPrice , decreaseQuantity} = useCart();
+
   return (
   
     <div className=' lg:pl-[100px] pl-[16px]'>

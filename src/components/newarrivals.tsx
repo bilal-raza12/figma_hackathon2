@@ -16,16 +16,16 @@ const NewArrivals = async () => {
           New Arrivals
         </h1>
 
-        <div className="grid md:grid-cols-4  grid-cols-2 justify-between md:gap-[10px] gap-0 md:ml-[w0px] ml-[8px] absolute top-[1050px]">
+        <div className="grid md:grid-cols-4  grid-cols-2 justify-between md:gap-[10px] gap-3 md:ml-[10px] ml-[8px] absolute top-[1140px]">
           {data.slice(0, 4).map((item) => (
             <Link href={`/newarrivals/${item._id}`}>
             <div
               key={item.name}
-              className="flex flex-col rounded-[20px] gap-[16px] h-auto"
+              className="flex flex-col rounded-[20px] border-[1px]  md:gap-[16px] gap-2 h-auto"
             >
                 <div>
                   <img
-                    className="w-[198px] h-[200px] sm:w-[295px] sm:h-[298px]"
+                    className=" w-full md:h-[200px] h-[170px]  sm:h-[298px]"
                     src={item.imageurl}
                     alt={item.name}
                     width={235}

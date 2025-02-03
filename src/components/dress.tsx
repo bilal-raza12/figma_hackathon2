@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Dress = () => {
   return (
-    <div className="bg-[#f0f0f0] mx-0 md:mx-[100px] mt-16 pt-0 md:pt-2 pb-3 md:pb-5 md:w-auto md:rounded-[40px] rounded-0">
+    <div className="bg-[#f0f0f0] mx-0 md:mx-[100px] mt-28 pt-0 md:pt-2 pb-3 md:pb-5 md:w-auto md:rounded-[40px] rounded-0">
               <h1 className="font-integralcfbold md:mt-[80px] md:ml-[276px] md:text-[48px] max-w-[258px] md:leading-[58px]
                text-[32px] leading-[36px] md:max-w-full mt-[40px] ml-[56px]">BROWSE BY dress STYLE</h1>
               <div className="flex flex-col gap-4 md:ml-[64px] ml-[24px] mt-14">

@@ -42,13 +42,17 @@ export default function RootLayout({
         <Header />
   <CartProvider>
 
+<main className="h-[100vh]">
 
         {children}
+</main>
   </CartProvider>
        
         
+<div className="relative bottom-0">
 
         <Footer />
+</div>
         
        
       </body>
