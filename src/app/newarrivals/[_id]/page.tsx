@@ -5,9 +5,11 @@ import { useCart } from '@/app/context/cartContext'
 import React from 'react'
 import { useEffect , useState} from 'react'
 import { IProducts } from '@/app/types/types'
-import { allproductsdetail } from '@/sanity/lib/query'
-import { SanityFetch } from '@/sanity/lib/fetch'
+// import { allproductsdetail } from '@/sanity/lib/query'
+// import { SanityFetch } from '@/sanity/lib/fetch'
 import Link from 'next/link'
+import { client } from '@/sanity/lib/client'
+import { groq } from 'next-sanity'
 
 
 interface INewArrival {
@@ -25,7 +27,15 @@ const NewArrivalDetail =   ({ params }: INewArrival) => {
     useEffect(() => {
       const fetchProduct = async () => {
           const resolvedParams = await params;
-          const data: IProducts[] = await SanityFetch({query:allproductsdetail});
+          const data: IProducts[] = await client.fetch(groq`*[_type == 'product' && isNew]{
+             _id,
+             name,
+             price,
+             description,
+             "imageurl": image.asset->url
+
+
+             }`)
           const foundproduct = data.find(p => p._id === resolvedParams._id);
           setProduct(foundproduct || null);
       };

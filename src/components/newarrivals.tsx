@@ -18,9 +18,9 @@ const NewArrivals = async () => {
 
         <div className="grid md:grid-cols-4  grid-cols-2 justify-between md:gap-[10px] gap-3 md:ml-[10px] ml-[8px] absolute top-[1140px]">
           {data.slice(0, 4).map((item) => (
-            <Link href={`/newarrivals/${item._id}`}>
+            <Link  key={item.name} href={`/newarrivals/${item._id}`}>
             <div
-              key={item.name}
+             
               className="flex flex-col rounded-[20px] border-[1px]  md:gap-[16px] gap-2 h-auto"
             >
                 <div>
