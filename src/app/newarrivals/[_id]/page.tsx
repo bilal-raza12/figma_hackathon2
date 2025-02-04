@@ -13,19 +13,21 @@ import Link from 'next/link'
 interface INewArrival {
     params: Promise<{ _id: string }>
 }
+ 
 
 
 
 const NewArrivalDetail =   ({ params }: INewArrival) => {
   const [product, setProduct] = useState<IProducts | null>(null);
 
+
     // Resolve the params before using
     useEffect(() => {
       const fetchProduct = async () => {
           const resolvedParams = await params;
-          const data: IProducts[] = await SanityFetch({ query: allproductsdetail });
-          const foundProduct = data.find(p => p._id === resolvedParams._id);
-          setProduct(foundProduct || null);
+          const data: IProducts[] = await SanityFetch({query:allproductsdetail});
+          const foundproduct = data.find(p => p._id === resolvedParams._id);
+          setProduct(foundproduct || null);
       };
 
       fetchProduct();

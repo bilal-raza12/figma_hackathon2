@@ -1,10 +1,8 @@
 "use client"
-import Cart from '@/components/cart'
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import React from 'react'
-import { SlArrowRight } from 'react-icons/sl'
 import { useState } from 'react'
 import { FaCheck, FaPlus } from "react-icons/fa";
 import { useCart } from '../context/cartContext'
@@ -21,15 +19,13 @@ const Checkout = () => {
     address: '',
     phone: '',
   })
-  const [order , setOrder] = useState<boolean>(false);
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e);
     const {name, value} = e.target;
     setFormValues({...formValues, [name]: value });
   }
-  const handleCheckout = () => {
-    console.log(formValues);
-  }
+ 
 
 
 const hanldePlaceOrder = async() => {
@@ -152,15 +148,7 @@ const hanldePlaceOrder = async() => {
 
 
 
-   {order && (
-    <div className="flex mt-5 items-center gap-5">
-
-         <div className='bg-green-400  w-[25px] h-[25px] rounded-full'>
-          <FaCheck  className='w-[13px] h-[12px] mt-[5px] ml-[4px]'/>
-         </div>
-         <h1 className='text-green-400 text-xs '>Order placed Succesdfully!</h1>        
-    </div>
-   )}
+   
 
             
          </div>

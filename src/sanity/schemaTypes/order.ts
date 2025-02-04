@@ -1,4 +1,4 @@
-import { defineType } from "sanity"
+
 
 export default{
     name:'order',

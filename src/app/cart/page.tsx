@@ -1,5 +1,5 @@
 "use client"
-import { useCart } from "../context/cartContext";
+
 
 import { SlArrowRight } from "react-icons/sl";
 import YourCart from '@/components/cart';
