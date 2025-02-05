@@ -81,9 +81,9 @@ const hanldePlaceOrder = async() => {
                                         <div className="flex flex-col text-end  items-end justify-between w-fit  md:w-[255px] h-[124px] absolute right-0">
                                             <button  onClick={() => removeFromCart(p._id)} className="w-6 h-6"><RiDeleteBinFill className="w-[18px] text-[#ff3333] h-[19px] mt-[2px] ml-[3px]"/></button>
                                             <div className="flex items-center gap-5 rounded-[62px] bg-[#f0f0f0] md:py-3 md:px-5 px-5 py-[14px] radius-[63px] md:w-[126px] w-[105px] h-[44px] md:mb-0 mb-4">
-                                                <button onClick={() => decreaseQuantity(p.id.toString())} className="md:w-5 md:h-5 w-4 h-4 text-black"><FiMinus className="md:w-[15px]  md:mt-[3px] md:ml-[2px] w-[12px] mt-[7px]"/></button>
+                                                <button onClick={() => decreaseQuantity(p._id)} className="md:w-5 md:h-5 w-4 h-4 text-black"><FiMinus className="md:w-[15px]  md:mt-[3px] md:ml-[2px] w-[12px] mt-[7px]"/></button>
                                                 <span>{p.quantity}</span>
-                                                <button  onClick={() => increaseQuantity(p.id.toString())} className="md:w-5 w-4 md:h-5 h-4 "><FaPlus className="md:w-4 md:h-4 mt-[2px] ml-[2px] w-[12px] h-[12px]"/></button>
+                                                <button  onClick={() => increaseQuantity(p._id)} className="md:w-5 w-4 md:h-5 h-4 "><FaPlus className="md:w-4 md:h-4 mt-[2px] ml-[2px] w-[12px] h-[12px]"/></button>
                                             </div>
                                         
                                         </div>

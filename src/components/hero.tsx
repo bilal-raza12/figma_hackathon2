@@ -1,5 +1,6 @@
 
 import Image from "next/image"
+import Link from "next/link"
 const Hero = () => {
   return(
 <div className="flex flex-col sm:mt-0  sm:flex-row bg-[#f2f0f1] w-full justify-between h-[100vh] overflow-hidden ">
@@ -7,36 +8,16 @@ const Hero = () => {
   <div className="md:max-w-[560px] sm:max-w-[315px] flex flex-col lg:ml-[50px] ml-[16px] mt-[30px] sm:mt-[120px] sm:gap-8 gap-6">
     <div className="font-integralcfbold sm:text-[64px] sm:leading-[64px] text-[36px] leading-[34px]">FIND CLOTHES THAT MATCHES YOUR STYLE</div>
     <p className="font-satoshiregular sm:text-[16px] md:leading-[22px] text-[12px] w-[320px] sm:w-full leading-[20px] opacity-[60%]">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-    <button className="md:max-w-[278px] max-w-[320px] px-[54px] py-4 bg-black rounded-[62px] text-white">Shop Now</button>
+    <Link href={"#new-arrivals"}>
+    <button  className="md:max-w-[278px] max-w-[320px] px-[54px] py-4 bg-black rounded-[62px] text-white">Shop Now</button>
+    </Link>
 
   </div>
 
   {/* mobilecount */}
-  <div className="md:hidden h-auto flex mt-2 justify-betwee  mb-[360px] mx-[50px]">
-    
-      <div className="flex flex-col ">
-        <h1 className="font-satoshibold text-2xl ">200 +</h1>
-        <h3 className="font-satoshiregular text-[12px] leading-[22px] opacity-[60%]">International Brands</h3>
 
-      </div>
-      <div className="border-r-[1px] border-black h-full ml-3 border-opacity-[10%]"></div>
-      
-      <div className="flex flex-col ml-6">
-        <h1 className="font-satoshibold text-2xl ">2,000 +</h1>
-        <h3 className="font-satoshiregular text-[12px] leading-[22px] opacity-[60%]">High Quality Products</h3>
 
-    
-    </div>
-    
-      
-  </div>
-
-  <div className="flex flex-col ml-6 sm:hidden absolute top-[460px] left-[100px] z-20">
-        <h1 className="font-satoshibold text-2xl ">30,000 +</h1>
-        <h3 className="font-satoshiregular text-[12px] leading-[22px] opacity-[60%]">Happy Customers</h3>
-
-    
-    </div>
+ 
 
     {/* mobile heroimage */}
     <div className="mb-9 sm:hidden absolute top-[500px]">

@@ -2,13 +2,25 @@
 
 
 
-import { SanityFetch } from "@/sanity/lib/fetch";
+
 import { IProducts } from "@/app/types/types";
-import { allproductsdetail } from "@/sanity/lib/query";
+
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
 
 const NewArrivals = async () => {
-  const data: IProducts[] = await SanityFetch({ query: allproductsdetail });
+  const data: IProducts[] = await client.fetch(groq`
+      *[_type == 'product' && isNew]{
+             _id,
+             name,
+             price,
+             description,
+             "imageurl": image.asset->url
+
+
+             }`
+  )
   return (
     <div>
       <div className="pb-8">

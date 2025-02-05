@@ -11,7 +11,10 @@ export default function Home() {
    
     <Hero />
     <Banner />
+    <div id="new-arrivals">
+
     <NewArrivals/>
+    </div>
     {/* <TopSelling /> */}
     <Dress/>
     {/* <Reviews/>   */}

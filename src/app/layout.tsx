@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${integralCFbold.variable} ${satoshibold.variable} ${integralCFbold.variable} ${satoshibold.variable} antialiased`}
       >
-        <TopHeader/>
+        
         <Header />
   <CartProvider>
 
@@ -49,7 +49,7 @@ export default function RootLayout({
   </CartProvider>
        
         
-<div className="relative bottom-0">
+<div className="">
 
         <Footer />
 </div>
