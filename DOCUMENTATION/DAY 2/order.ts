@@ -7,7 +7,7 @@ export default {
         name: 'orderId',
         title: 'Order ID',
         type: 'string',
-        validation: Rule => Rule.required(),
+        
       },
       {
         name: 'products',
@@ -27,19 +27,19 @@ export default {
                 name: 'productName',
                 title: 'Product Name',
                 type: 'string',
-                validation: Rule => Rule.required(),
+                // validation: Rule => Rule.required(),
               },
               {
                 name: 'quantity',
                 title: 'Quantity',
                 type: 'number',
-                validation: Rule => Rule.integer().min(1),
+               
               },
               {
                 name: 'price',
                 title: 'Price',
                 type: 'number',
-                validation: Rule => Rule.min(0),
+                // validation: Rule => Rule.min(0),
               },
             ],
           },
@@ -54,29 +54,29 @@ export default {
             name: 'name',
             title: 'Customer Name',
             type: 'string',
-            validation: Rule => Rule.required().min(3).max(100),
+            // validation: Rule => Rule.required().min(3).max(100),
           },
           {
             name: 'email',
             title: 'Email',
             type: 'string',
-            validation: Rule =>
-              Rule.required().regex(
-                /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                { name: 'email', invert: false },
-              ),
+            // validation: Rule =>
+              // Rule.required().regex(
+                // /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                // { name: 'email', invert: false },
+              // ),
           },
           {
             name: 'phone',
             title: 'Phone Number',
             type: 'string',
-            validation: Rule => Rule.required().min(10).max(15),
+            // validation: Rule => Rule.required().min(10).max(15),
           },
           {
             name: 'address',
             title: 'Address',
             type: 'text',
-            validation: Rule => Rule.required(),
+            // validation: Rule => Rule.required(),
           },
         ],
       },
@@ -84,7 +84,7 @@ export default {
         name: 'totalPrice',
         title: 'Total Price',
         type: 'number',
-        validation: Rule => Rule.min(0),
+        // validation: Rule => Rule.min(0),
         description: 'Automatically calculated based on product prices and quantities.',
       },
       {
@@ -100,13 +100,13 @@ export default {
           ],
         },
         initialValue: 'pending',
-        validation: Rule => Rule.required(),
+        // validation: Rule => Rule.required(),
       },
       {
         name: 'orderDate',
         title: 'Order Date',
         type: 'datetime',
-        validation: Rule => Rule.required(),
+        // validation: Rule => Rule.required(),
       },
     ],
     preview: {
