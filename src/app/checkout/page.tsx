@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { useState } from 'react'
-import { FaCheck, FaPlus } from "react-icons/fa";
+import {FaPlus } from "react-icons/fa";
 import { useCart } from '../context/cartContext'
 import { RiDeleteBinFill } from 'react-icons/ri'
 import { FiMinus } from 'react-icons/fi'

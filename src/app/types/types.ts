@@ -1,5 +1,5 @@
 export interface IProducts{
-    id(id: any): void
+   
     _id:string,
   name:string,
   description:string,
