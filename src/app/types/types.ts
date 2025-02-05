@@ -3,7 +3,7 @@ export interface IProducts{
     _id:string,
   name:string,
   description:string,
-  price:string,
+  price:number,
   imageurl:string,
   category:string,
   discountPercent:string,

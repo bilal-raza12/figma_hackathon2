@@ -7,7 +7,7 @@ interface CartItems extends IProducts {
 }
 interface CartContextType {
     cartItems : IProducts[],
-    totalPrice:string,
+    totalPrice:number,
     addToCart: (product:IProducts) => void,
     removeFromCart: (_id:string) => void,
     increaseQuantity: (_id:string) => void,
@@ -39,7 +39,7 @@ interface CartContextType {
     const removeFromCart = (_id:string) => {
         setCartItems(prevCartItems => prevCartItems.filter(item => item._id!== _id));
     };
-    const totalPrice = cartItems.reduce((total , item) => total + item.price , 0)
+    const totalPrice = cartItems.reduce((total , item) => total + item?.price * (item.quantity), 0)
     return (
         <cartContext.Provider value={{ cartItems, totalPrice, addToCart, removeFromCart , increaseQuantity , decreaseQuantity }}>
             {children}
