@@ -25,19 +25,19 @@ export default {
         name: 'description',
         title: 'Description',
         type: 'text',
-        validation: Rule => Rule.required().min(10),
+        // validation: Rule => Rule.required().min(10),
       },
       {
         name: 'rating',
         title: 'Rating',
         type: 'number',
-        validation: Rule => Rule.min(0).max(5),
+        // validation: Rule => Rule.min(0).max(5),
       },
       {
         name: 'stockLevel',
         title: 'Stock Level',
         type: 'number',
-        validation: Rule => Rule.integer().min(0),
+        // validation: Rule => Rule.integer().min(0),
       },
      
       {
@@ -50,13 +50,13 @@ export default {
         name: 'price',
         title: 'Price',
         type: 'number',
-        validation: Rule => Rule.min(0),
+        // validation: Rule => Rule.min(0),
       },
       {
         name: 'discount',
         title: 'Discount (%)',
         type: 'number',
-        validation: Rule => Rule.min(0).max(100),
+        // validation: Rule => Rule.min(0).max(100),
       },
       {
         name: 'discountedPrice',
