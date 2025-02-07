@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Footer from "@/components/footer";
-import {ClerkProvider} from "@Clerk/nextjs"
+
 
 import Header from "@/components/header";
 import { CartProvider } from "./context/cartContext";
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    
 
     <html lang="en">
       <body
@@ -60,6 +60,6 @@ export default function RootLayout({
        
       </body>
     </html>
-        </ClerkProvider>
+        
   );
 }
