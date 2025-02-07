@@ -3,11 +3,11 @@
 
 import { SlArrowRight } from "react-icons/sl";
 import YourCart from '@/components/cart';
-import AuthGuard from "@/components/AuthGuard";
+
 const Cart = () => {
 
   return (
-  <AuthGuard>
+ 
 
     <div className=' lg:pl-[100px] pl-[16px]'>
       {/* cart url */}
@@ -24,7 +24,7 @@ const Cart = () => {
       </div>
       
     </div>
-  </AuthGuard>
+  
     
   )
 }

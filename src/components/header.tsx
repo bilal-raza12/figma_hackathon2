@@ -1,5 +1,5 @@
 "use client";
-import {SignedIn , UserButton} from "@Clerk/nextjs"
+
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
@@ -119,9 +119,7 @@ const Header = () => {
               <div className="w-6 h-6">
                 <CgProfile className="w-[22.13px] h-[20.25] mt-[1.88px]" />
               </div>
-              <SignedIn>
-         <UserButton />
-       </SignedIn>
+              
             </div>
           </div>
           {/* <div className="border-black border-[1px] border-opacity-[10%] mt-6 hidden sm:block ml-[100px]"></div> */}
